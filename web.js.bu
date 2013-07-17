@@ -1,4 +1,5 @@
 var express = require('express');
+<<<<<<< HEAD
 
 var fs = require('fs');
 
@@ -6,6 +7,11 @@ var app = express.createServer(express.logger());
 
 var filebuffer = new Buffer(fs.readFileSync('index.html'),'utf-8');
 
+=======
+
+var app = express.createServer(express.logger());
+
+>>>>>>> b462b80381c2ae562db7a3409cf42844b8b55d8c
 app.get('/', function(request, response) {
   response.send(filebuffer.toString());
 });
